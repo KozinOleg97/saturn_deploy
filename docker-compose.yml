@@ -13,11 +13,13 @@ services:
     image: kozinoleg97/saturn_back
     container_name: backend
     network_mode: "host"
-    depends_on: postgres
+    depends_on:
+      - postgres
 
   front:
     image: kozinoleg97/saturn_front
     container_name: frontend
     network_mode: "host"
-    depends_on: back
+    depends_on:
+      - back
 
