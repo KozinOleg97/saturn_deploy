@@ -20,6 +20,4 @@ services:
     image: kozinoleg97/saturn_front:v1
     container_name: frontend
     network_mode: "host"
-    depends_on:
-      - back
 
