@@ -10,14 +10,14 @@ services:
       - ./postgres/postgres_data:/var/lib/postgresql/data/
 
   back:
-    image: kozinoleg97/saturn_back
+    image: kozinoleg97/saturn_back:v1
     container_name: backend
     network_mode: "host"
     depends_on:
       - postgres
 
   front:
-    image: kozinoleg97/saturn_front
+    image: kozinoleg97/saturn_front:v1
     container_name: frontend
     network_mode: "host"
     depends_on:
